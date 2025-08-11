@@ -9,16 +9,41 @@ conventional_commits = true
 filter_commits = true
 tag_pattern = "v[0-9]*"
 
-[git.commit_parsers]
-"feat" = { group = "🚀 Features" }
-"fix" = { group = "🐞 Bugfixes" }
-"refactor" = { group = "♻️ Refactoring" }
-"perf" = { group = "⚡ Performance" }
-"docs" = { group = "📝 Dokumentation" }
-"test" = { group = "✅ Tests" }
-"build" = { group = "🏗️ Build" }
-"ci" = { group = "🔁 CI" }
-"chore" = { group = "🔧 Wartung" }
+[[git.commit_parsers]]
+message = "^feat"
+group = "🚀 Features"
+
+[[git.commit_parsers]]
+message = "^fix"
+group = "🐞 Bugfixes"
+
+[[git.commit_parsers]]
+message = "^refactor"
+group = "♻️ Refactoring"
+
+[[git.commit_parsers]]
+message = "^perf"
+group = "⚡ Performance"
+
+[[git.commit_parsers]]
+message = "^docs"
+group = "📝 Dokumentation"
+
+[[git.commit_parsers]]
+message = "^test"
+group = "✅ Tests"
+
+[[git.commit_parsers]]
+message = "^build"
+group = "🏗️ Build"
+
+[[git.commit_parsers]]
+message = "^ci"
+group = "🔁 CI"
+
+[[git.commit_parsers]]
+message = "^chore"
+group = "🔧 Wartung"
 
 [git.tag_parsers]
 "v(.*)" = "$1"

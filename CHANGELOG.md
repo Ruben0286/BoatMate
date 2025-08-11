@@ -1,1 +1,2 @@
-## [0.2.0] - 2025-08-11
+# Changelog
+Alle relevanten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.Alle relevanten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
