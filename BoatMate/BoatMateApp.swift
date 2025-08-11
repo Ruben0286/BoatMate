@@ -13,8 +13,9 @@ struct BoatMateApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BoatListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
+
