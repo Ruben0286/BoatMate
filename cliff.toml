@@ -1,0 +1,24 @@
+[changelog]
+header = "# Changelog"
+body = """
+Alle relevanten Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
+"""
+
+[git]
+conventional_commits = true
+filter_commits = true
+tag_pattern = "v[0-9]*"
+
+[git.commit_parsers]
+"feat" = { group = "🚀 Features" }
+"fix" = { group = "🐞 Bugfixes" }
+"refactor" = { group = "♻️ Refactoring" }
+"perf" = { group = "⚡ Performance" }
+"docs" = { group = "📝 Dokumentation" }
+"test" = { group = "✅ Tests" }
+"build" = { group = "🏗️ Build" }
+"ci" = { group = "🔁 CI" }
+"chore" = { group = "🔧 Wartung" }
+
+[git.tag_parsers]
+"v(.*)" = "$1"
